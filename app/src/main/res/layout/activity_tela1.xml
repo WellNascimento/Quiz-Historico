@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/padrao"
+    tools:context=".Tela1">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="172dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.028"
+        app:srcCompat="@drawable/revolta" />
+
+    <RadioGroup
+        android:id="@+id/rdgConstitucionalista"
+        android:layout_width="371dp"
+        android:layout_height="194dp"
+        android:layout_margin="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.0">
+
+        <RadioButton
+            android:id="@+id/rbt1932"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clicou"
+            android:text="1932" />
+
+        <RadioButton
+            android:id="@+id/rbt1929"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clicou"
+            android:text="1929" />
+
+        <RadioButton
+            android:id="@+id/rbt1945"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clicou"
+            android:text="1945" />
+
+        <RadioButton
+            android:id="@+id/rbt1964"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clicou"
+            android:text="1964" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnQst1"
+        android:layout_width="272dp"
+        android:layout_height="44dp"
+        android:layout_margin="10dp"
+        android:enabled="false"
+        android:onClick="responder"
+        android:text="RESPONDER"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rdgConstitucionalista"
+        app:layout_constraintVertical_bias="0.944" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
