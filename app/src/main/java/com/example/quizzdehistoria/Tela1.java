@@ -26,7 +26,6 @@ public class Tela1 extends AppCompatActivity {
         btnQst1 = findViewById(R.id.btnQst1);
 
     }
-
     public void responder(View view)
     {
         int idChecked = rdgConstitucionalista.getCheckedRadioButtonId();

@@ -9,34 +9,36 @@ import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
-public class Tela3 extends AppCompatActivity {
+public class Tela4 extends AppCompatActivity {
 
-    Button btnQst3;
-    RadioGroup rdgLenin;
-    RadioButton rbtRussa;
+    Button btnQst4;
+    RadioGroup rdgHitler;
+    RadioButton rbtAustria;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tela3);
+        setContentView(R.layout.activity_tela4);
 
-        setTitle("Liderou qual revolução?");
-        btnQst3 = findViewById(R.id.btnQst3);
-        rdgLenin = findViewById(R.id.rdgLenin);
-        rbtRussa = findViewById(R.id.rbtRussa);
+        setTitle("Qual a nacionalidade de Hitler?");
+
+        btnQst4 = findViewById(R.id.btnQst4);
+        rdgHitler = findViewById(R.id.rdgHitler);
+        rbtAustria = findViewById(R.id.rbtAustria);
+
     }
     public void responder(View view)
     {
-        int idChecked = rdgLenin.getCheckedRadioButtonId();
+        int idChecked = rdgHitler.getCheckedRadioButtonId();
 
         int pontos = getIntent().getIntExtra("pontos", 0);
         String nome = getIntent().getStringExtra("nome");
 
-        if(idChecked == R.id.rbtRussa)
+        if(idChecked == R.id.rbtAustria)
         {
             pontos++;
         }
-        Intent it = new Intent(this, Tela4.class);
+        Intent it = new Intent(this, Tela5.class);
         it.putExtra("nome", nome);
         it.putExtra("pontos", pontos);
         startActivity(it);
@@ -44,6 +46,6 @@ public class Tela3 extends AppCompatActivity {
     }
     public void clicou(View view)
     {
-        btnQst3.setEnabled(true);
+        btnQst4.setEnabled(true);
     }
 }
