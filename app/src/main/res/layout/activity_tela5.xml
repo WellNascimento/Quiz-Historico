@@ -4,6 +4,68 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/padrao"
     tools:context=".Tela5">
 
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="371dp"
+        android:layout_height="194dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.029"
+        app:srcCompat="@drawable/paunocu" />
+
+    <RadioGroup
+        android:id="@+id/rdgFonseca"
+        android:layout_width="371dp"
+        android:layout_height="194dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.22">
+
+        <RadioButton
+            android:id="@+id/rbtFonseca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clicou"
+            android:text="Deodoro da Fonseca" />
+
+        <RadioButton
+            android:id="@+id/rbtVargas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clicou"
+            android:text="Getúlio Vargas" />
+
+        <RadioButton
+            android:id="@+id/rbtPedro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clicou"
+            android:text="Dom Pedro II" />
+
+        <RadioButton
+            android:id="@+id/rbtOscar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clicou"
+            android:text="Oscar Niemeyer" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnQst5"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:enabled="false"
+        android:onClick="responder"
+        android:text="RESPONDER"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rdgFonseca" />
 </androidx.constraintlayout.widget.ConstraintLayout>
