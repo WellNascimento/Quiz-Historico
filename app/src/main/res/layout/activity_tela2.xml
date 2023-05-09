@@ -63,14 +63,15 @@
         android:layout_width="270dp"
         android:layout_height="50dp"
         android:layout_margin="10dp"
+        android:layout_marginBottom="32dp"
         android:enabled="false"
         android:onClick="responder"
         android:text="responder"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/rdgIntegralista"
-        app:layout_constraintVertical_bias="0.887" />
+        app:layout_constraintVertical_bias="0.926" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,6 +4,71 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/padrao"
     tools:context=".Tela6">
 
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="371dp"
+        android:layout_height="194dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.029"
+        app:srcCompat="@drawable/luiz_gama" />
+
+    <RadioGroup
+        android:id="@+id/rdgGama"
+        android:layout_width="371dp"
+        android:layout_height="194dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+        app:layout_constraintVertical_bias="0.103">
+
+        <RadioButton
+            android:id="@+id/rbtIsabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clicou"
+            android:text="Princesa Isabel" />
+
+        <RadioButton
+            android:id="@+id/rbtGama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clicou"
+            android:text="Luís Gama" />
+
+        <RadioButton
+            android:id="@+id/rbtPrestes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clicou"
+            android:text="Carlos Prestes" />
+
+        <RadioButton
+            android:id="@+id/rbtAndre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clicou"
+            android:text="André Rebouças" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnQst6"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="32dp"
+        android:enabled="false"
+        android:onClick="responder"
+        android:text="RESPONDER"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rdgGama"
+        app:layout_constraintVertical_bias="0.971" />
 </androidx.constraintlayout.widget.ConstraintLayout>
